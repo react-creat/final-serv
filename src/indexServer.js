@@ -11,8 +11,8 @@ const port = 8080;
 
 const mongoose = require('mongoose');
 
-const PostModel = require('./models/post');
-const PostController = require('./Controler/PostControler');
+import PostModel from './models/post';
+import PostController from './Controler/PostControler';
 const Post = new PostController();
 
 mongoose.connect('mongodb://127.0.0.1:27017/blogReact', {
