@@ -9,7 +9,7 @@ app.use(cors());
 
 const port = 8080;
 
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
 import PostModel from './models/post';
 import PostController from './Controler/PostControler';
